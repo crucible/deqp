@@ -494,9 +494,10 @@ group varying "Varying linkage"
 		end
 
 		# different interpolation
-		case differing_interpolation_2
+		case differing_mismatch_2
 			version 300 es
 			desc "varying interpolation different (smooth vs. centroid)"
+			expect link_fail
 			values
 			{
 				input float in0		= [ -1.25 | -25.0 | 1.0 | 2.25 | 3.4 | 16.0 ];
